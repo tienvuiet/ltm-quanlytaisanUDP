@@ -33,7 +33,7 @@ public class ClientControl {
     // chuyển Request thành byte rồi gửi đến server 5555.
     public void sendData(Request request) throws Exception {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        ObjectOutputStream oos = new ObjectOutputStream(baos);
+        ObjectOutputStream oos = new ObjectOutputStream(baos);   // cái này chuyển này
 
         oos.writeObject(request);
         oos.flush();
